@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculator | Aayush Patel</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="calculator">
+
+            <form>
+
+                <div class="display">
+                    <input type="text" name="display" id="display" readonly>
+                </div>
+
+                <div>
+                    <input type="button" value="AC" class="operator" onclick="clearDisplay()">
+                    <input type="button" value="DE" class="operator" onclick="deleteLast()">
+                    <input type="button" value="." class="operator" onclick="addValue('.')">
+                    <input type="button" value="/" class="operator" onclick="addValue('/')">
+                </div>
+
+                <div>
+                    <input type="button" value="7" onclick="addValue('7')">
+                    <input type="button" value="8" onclick="addValue('8')">
+                    <input type="button" value="9" onclick="addValue('9')">
+                    <input type="button" value="*" class="operator" onclick="addValue('*')">
+                </div>
+
+                <div>
+                    <input type="button" value="4" onclick="addValue('4')">
+                    <input type="button" value="5" onclick="addValue('5')">
+                    <input type="button" value="6" onclick="addValue('6')">
+                    <input type="button" value="-" class="operator" onclick="addValue('-')">
+                </div>
+
+                <div>
+                    <input type="button" value="1" onclick="addValue('1')">
+                    <input type="button" value="2" onclick="addValue('2')">
+                    <input type="button" value="3" onclick="addValue('3')">
+                    <input type="button" value="+" class="operator" onclick="addValue('+')">
+                </div>
+
+                <div>
+                    <input type="button" value="00" onclick="addValue('00')">
+                    <input type="button" value="0" onclick="addValue('0')">
+                    <input
+                        type="button"
+                        value="="
+                        class="equal operator"
+                        onclick="calculate()"
+                    >
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
